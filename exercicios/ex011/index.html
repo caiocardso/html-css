@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Bokehlicia-Captiva-User.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--source-media-type: altera o tamanho da imagem conforme o tamanho do dispositivo. (do menor para o maior)-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reprodusindo Áudio</h1>
+    <p>Vamos aprendera reproduzir áudios em HTML5</p>
+    <audio preload="auto" autoplay controls>
+        <source src="midia/musica-youtube.mp3" type="audio/mpeg">
+        <source src="midia/musica-youtube.ogg" type="audio/ogg">
+        <source src="midia/musica-youtube.wav" type="audio/wav"><!--audio para diferentes navegadores. (evitar arquivo "wav: muito pesado")-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/musica-youtube.mp3">clique aqui para baixar o arquivo.</a></p>
+    </audio>
+    <!--<audio src="midia/musica-youtube.mp3" controls autoplay></audio>/*
+    estilos de áudio para outros navegadores:  MP3-WAV-OGG -->
+</body>
+</html>
